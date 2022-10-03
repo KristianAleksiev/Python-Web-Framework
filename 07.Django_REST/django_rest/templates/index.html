@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Test</h1>
+<div id="root">
+
+    <div class="list-products">
+
+    </div>
+    <div class="detail-products">
+
+    </div>
+
+</div>
+{#<script>#}
+{#    window.URLS = {#}
+{#        productsALL: () => "/api/products",#}
+{#        productDetails: (id) => `api/products/${id}/`#}
+{#    };#}
+{#    const getAllProducts = () => {#}
+{#        const {productsAll} = window.URLS;#}
+{#        return fetch(productsAll()).then(response => response.json());#}
+{#    };#}
+{##}
+{#    const renderProductsList = (products) => {#}
+{#        let productsListItems = "";#}
+{#        for (const product in products) {#}
+{#            productsListItems += `<li> <a href='#'>${product.name}</a></li>`;#}
+{#        }#}
+{#        return `<ul>${productsListItems}</ul>`#}
+{#    };#}
+{##}
+{##}
+{#    const loadProducts = () => {#}
+{#        getAllProducts().then(products => renderProductsList(products)).then(productList => {#}
+{#            console.log(productList);#}
+{#        });#}
+{#    };#}
+{#    const loadDetails = (id) => {#}
+{##}
+{#    };#}
+{#    loadProducts()#}
+{#</script>#}
+</body>
+</html>
